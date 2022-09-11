@@ -139,7 +139,7 @@ img{
 
 /* CSS CLASSES */
 .section{
-    padding: 2rem 0 4rem;
+    padding: 2rem 0 3rem;
 }
 
 .section_title{
@@ -149,7 +149,6 @@ img{
 .section_subtitle{
     display: block;
     font-size: var(--small-font-size);
-    margin-bottom: var(--mb-3);
 }
 
 .section_title,
@@ -397,6 +396,10 @@ img{
     border-radius: .5rem;
     justify-self: center;
     align-self: center;
+}
+
+.about_data{
+    margin-top: 2rem;
 }
 
 .about_description{
@@ -771,7 +774,12 @@ img{
 
 .project_img{
     width: 232px;
+    margin-bottom: 1rem;
     justify-self: center;
+}
+
+.project_data{
+    margin-bottom: 2rem;
 }
 
 /* CONTACT ME */
@@ -827,7 +835,7 @@ img{
 }
 
 .footer_container{
-    row-gap: 3.5rem;
+    row-gap: 2rem;
 }
 
 .footer_bg{
@@ -844,9 +852,12 @@ img{
     font-size: var(--small-font-size);
 }
 .footer_links{
-    display: flex;
-    flex-direction: column;
+    display: grid;
     row-gap: 1.5rem;
+}
+
+.footer_link{ 
+    display: flex;
 }
 
 .footer_link:hover{
@@ -978,6 +989,15 @@ img{
         grid-template-columns: .6fr;
         justify-content: center;
     }
+
+    .contact_info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin-top: 2rem;
+        column-gap: 5rem;
+        margin-left: 2rem;  
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -986,15 +1006,21 @@ img{
         margin-right: auto;
     }
 
+    .contact_info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin-top: 2rem;
+        column-gap: 5rem;
+        margin-left: 2rem;  
+    }
+
     body{
         margin: 0;
     }
 
     .section{
         padding: 6rem 0 2rem;
-    }
-    .section_subtitle{
-        margin-bottom: 4rem;
     }
 
     .header{
@@ -1049,7 +1075,7 @@ img{
         column-gap: 5rem;
     }
     .about_img{
-        width: 350px;
+        width: 240px;
     }
     .about_description{
         text-align: initial;
@@ -1120,7 +1146,8 @@ img{
         column-gap: 2rem;
     }
     .footer_socials{
-        justify-self: flex-end;
+        display: grid;
+        justify-self: center;
     }
     .footer_copy{
         margin-top: 4.5rem;
@@ -1142,22 +1169,40 @@ img{
         transform: translateX(-6rem);
     }
 
+    .contact_info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin-top: 2rem;
+        column-gap: 12rem;
+        margin-left: 2rem;  
+    }
+
     .services_container{
         grid-template-columns: repeat(2, 238px);
     }
 
     .portfolio_content{
         column-gap: 5rem;
+        margin-top: 2rem;
     }
-    .swiper-portfolio-icon{
-        font-size: 3.5rem;
+
+    .swiper-portfolio-icon {
+        font-size: 2rem;
+        position: relative;
+        left: -1rem;
+        color: var(--first-color);
     }
+
+    
     .swiper-button-prev{
-        left: -3.5rem;
+        left: -.5rem;
     }
+
     .swiper-button-next{
-        right: -3.5rem;
+        right: -.5rem;
     }
+
     .swiper-container-horizontal >.swiper-pagination-bullets{
         bottom: -4.5rem;
     }
