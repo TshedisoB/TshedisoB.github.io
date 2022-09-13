@@ -124,10 +124,6 @@ h1,h2,h3,h4{
     font-weight: var(--font-semi-bold);
 }
 
-#mask0{
-    mask-type: alpha;
-}
-
 ul{
     list-style: none;
 }
