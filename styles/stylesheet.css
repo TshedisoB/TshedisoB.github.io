@@ -133,7 +133,7 @@ a{
 }
 
 img{
-    max-width: 100%;
+    max-width: 70%;
     height: auto;
 }
 
@@ -942,6 +942,10 @@ img{
     }
     .home_blob{
         width: 11.25rem;
+    }
+
+    img{
+        max-width: 90%;
     }
 
     .skills_title{
